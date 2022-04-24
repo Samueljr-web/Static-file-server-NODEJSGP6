@@ -4,8 +4,9 @@
   "description": "A satic file server ",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Samueljr-web/Static-file-server-NODEJSGP6/issues"
   },
-  "homepage": "https://github.com/Samueljr-web/Static-file-server-NODEJSGP6#readme"
+  "homepage": "https://github.com/Samueljr-web/Static-file-server-NODEJSGP6#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
