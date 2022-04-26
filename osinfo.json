@@ -1,0 +1,10 @@
+[
+    {
+        "hostname'": "the os host name",
+        "platform": "the os platform'",
+        "architecture": "the os architecture",
+        "numberOfCPUS": "the os number of cores",
+        "networkInterfaces": "os network interfaces",
+        "uptime":" os uptime"
+    }
+]
