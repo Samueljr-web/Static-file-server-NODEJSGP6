@@ -1,11 +1,26 @@
 var http = require("http");
 var fs = require("fs");
+const os = require("os");
 
 const host = "0.0.0.0";
 const port = process.env.PORT || 3000;
 
 const server = http.createServer(function (req, res) {
   const urlPath = req.url;
+  const osData = [
+    {
+      hostname: os.hostname(),
+      platform: os.platform(),
+      architecture: os.arch(),
+      numberOfCPUS: os.cpus(),
+      networkInterfaces: os.networkInterfaces(),
+      uptime: os.uptime(),
+    },
+  ];
+
+  const osinfoJSON = JSON.stringify(osData);
+  const osObject = JSON.parse(osinfoJSON);
+  const dataJSON = JSON.stringify(osObject);
 
   if (urlPath === "/") {
     fs.readFile("./pages/index.html", (err, content) => {
@@ -19,8 +34,10 @@ const server = http.createServer(function (req, res) {
     });
   } else if (urlPath === "/sys") {
     fs.readFile("osinfo.json", (err, content) => {
+      fs.writeFileSync("osinfo.json", dataJSON);
       res.writeHead(201, { "Content-Type": "text/plain" });
-      res.end("Your OS info has been saved successfully!");
+
+      res.end(content, "utf-8");
     });
   } else {
     fs.readFile("./pages/404.html", (err, content) => {

@@ -1,10 +1,1 @@
-[
-    {
-        "hostname'": "the os host name",
-        "platform": "the os platform'",
-        "architecture": "the os architecture",
-        "numberOfCPUS": "the os number of cores",
-        "networkInterfaces": "os network interfaces",
-        "uptime":" os uptime"
-    }
-]
+[{"hostname":"DESKTOP-BB6D0RK","platform":"win32","architecture":"x64","numberOfCPUS":[{"model":"Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz","speed":2494,"times":{"user":14790234,"nice":0,"sys":4883437,"idle":10360812,"irq":408968}},{"model":"Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz","speed":2494,"times":{"user":14323859,"nice":0,"sys":4496859,"idle":11213562,"irq":234468}},{"model":"Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz","speed":2494,"times":{"user":15613703,"nice":0,"sys":4415546,"idle":10005031,"irq":175468}},{"model":"Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz","speed":2494,"times":{"user":15084312,"nice":0,"sys":4188296,"idle":10761671,"irq":170312}}],"networkInterfaces":{"Wi-Fi":[{"address":"fe80::1d07:e90b:461:a667","netmask":"ffff:ffff:ffff:ffff::","family":"IPv6","mac":"a0:88:b4:dd:64:d0","internal":false,"cidr":"fe80::1d07:e90b:461:a667/64","scopeid":16},{"address":"192.168.43.237","netmask":"255.255.255.0","family":"IPv4","mac":"a0:88:b4:dd:64:d0","internal":false,"cidr":"192.168.43.237/24"}],"Loopback Pseudo-Interface 1":[{"address":"::1","netmask":"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff","family":"IPv6","mac":"00:00:00:00:00:00","internal":true,"cidr":"::1/128","scopeid":0},{"address":"127.0.0.1","netmask":"255.0.0.0","family":"IPv4","mac":"00:00:00:00:00:00","internal":true,"cidr":"127.0.0.1/8"}]},"uptime":118352}]
