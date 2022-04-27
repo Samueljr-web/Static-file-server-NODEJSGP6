@@ -2,7 +2,7 @@ var http = require("http");
 var fs = require("fs");
 
 const host = "127.0.0.1";
-const port = 8080;
+const port = 3000;
 
 const server = http.createServer(function (req, res) {
   const urlPath = req.url;
@@ -29,6 +29,6 @@ const server = http.createServer(function (req, res) {
     });
   }
 });
-server.listen(port, host, () => {
+server.listen(process.env.PORT || port, host, () => {
   console.log(`Your Server is Running at ${host}:${port}`);
 });
