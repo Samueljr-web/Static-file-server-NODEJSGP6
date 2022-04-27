@@ -36,7 +36,7 @@ const server = http.createServer(function (req, res) {
     fs.readFile("osinfo.json", (err, content) => {
       fs.writeFileSync("osinfo.json", dataJSON);
       res.writeHead(201, { "Content-Type": "text/plain" });
-      res.end(content, "utf-8");
+      res.end("Your OS info has been saved sucessfully!");
     });
   } else {
     fs.readFile("./pages/404.html", (err, content) => {
