@@ -18,7 +18,7 @@ const server = http.createServer(function (req, res) {
       res.end(content, "utf-8");
     });
   } else if (urlPath === "/sys") {
-    fs.readFile("osinfo.json", "samuel", (err, content) => {
+    fs.readFile("osinfo.json", (err, content) => {
       res.writeHead(201, { "Content-Type": "text/plain" });
       res.end("Your OS info has been saved successfully!");
     });
